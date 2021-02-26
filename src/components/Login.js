@@ -64,6 +64,7 @@ const Login = () => {
         <input
           placeholder="username..."
           name="username"
+          id="username"
           type="text"
           onChange={formInput}
           value={formData.username}
@@ -72,6 +73,7 @@ const Login = () => {
         <input
         placeholder="password..."
         name="password"
+        id="password"
         type="password"
         onChange={formInput}
         value={formData.password}
