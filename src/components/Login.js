@@ -3,8 +3,8 @@ import { useHistory } from "react-router-dom";
 import axios from "axios";
 
 const initialFormValues = {
-  username: "",
-  password: "",
+  username: "Lambda School",
+  password: "i<3Lambd4",
 }
 
 const Login = () => {
@@ -60,24 +60,26 @@ const Login = () => {
         <p>Build a login page here</p>
       </h1>
       <form>
-        <label htmlFor="username">username:</label>
-        <input
-          placeholder="username..."
-          name="username"
-          id="username"
-          type="text"
+        <label>username:
+          <input
+            placeholder="username..."
+            name="username"
+            id="username"
+            type="text"
+            onChange={formInput}
+            value={formData.username}
+          ></input>
+        </label>
+        <label>password:
+          <input
+          placeholder="password..."
+          name="password"
+          id="password"
+          type="password"
           onChange={formInput}
-          value={formData.username}
-        ></input>
-        <label htmlFor="password">password:</label>
-        <input
-        placeholder="password..."
-        name="password"
-        id="password"
-        type="password"
-        onChange={formInput}
-        value={formData.password}
-        ></input>
+          value={formData.password}
+          ></input>
+        </label>
         <button onClick={loginRequest}>Login</button>
       </form>
     </>
