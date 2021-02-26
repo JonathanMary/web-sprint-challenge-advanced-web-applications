@@ -7,6 +7,8 @@ const Color = ({color, editing, editColor, deleteColor}) => {
         deleteColor(color);
     }
 
+    console.log("Color is run")
+
     return(<li data-testid="color" onClick={() => editColor(color)}>
         <span>
         {
