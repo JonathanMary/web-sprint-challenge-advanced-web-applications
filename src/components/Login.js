@@ -60,7 +60,7 @@ const Login = () => {
         <p>Build a login page here</p>
       </h1>
       <form>
-        <label>username:</label>
+        <label htmlFor="username">username:</label>
         <input
           placeholder="username..."
           name="username"
@@ -68,7 +68,7 @@ const Login = () => {
           onChange={formInput}
           value={formData.username}
         ></input>
-        <label>password:</label>
+        <label htmlFor="password">password:</label>
         <input
         placeholder="password..."
         name="password"
