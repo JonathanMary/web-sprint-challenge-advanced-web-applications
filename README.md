@@ -22,8 +22,8 @@ In this project you will create a login page and request a token from the server
 
 * [x] Fork and clone this repository.
 * [x] Create a new branch: git checkout -b `<firstName-lastName>`.
-* [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-* [ ] Push commits: git push origin `<firstName-lastName>`.
+* [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+* [x] Push commits: git push origin `<firstName-lastName>`.
 * [x] **RUN** `npm install` to install your dependencies.
 * [x] **RUN** `npm start` to start your application.
 
@@ -104,6 +104,11 @@ These goals may or may not be things you have learned in this module but they bu
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers to the questions within `interview_answers.md` file. These will not be counted as a part of your sprint score but will be helpful for preparing you for your endorsement interview, and enhancing overall understanding.
 
 1. Explain what a token is used for.
+    A token is given to a user after they enter a valid login, as a way to authenticate them.
+    If no token is found, user will ne be able to access some restricted part of the website that check for one.
 2. What steps can you take in your web apps to keep your data secure?
+    Implementing authentication and protected routes.
 3. Describe how web servers work.
+    A web server is hardware, and software, that holds resources that can be queried by other computers through internet, via URL.
 4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+    PUT, POST, GET, DELETE.
